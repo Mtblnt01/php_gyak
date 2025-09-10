@@ -71,5 +71,25 @@ foreach ($students as $student) {
 }
 
 //hf user tomb, ami majd lehetővé teszi az autentikációt, foreachel irasd ki
+$users = [
+    [
+        "username" => "pista",
+        "password" => "titkos123",
+        "email" => "pista@example.com"
+    ],
+    [
+        "username" => "bela",
+        "password" => "jelszo456",
+        "email" => "bela@example.com"
+    ],
+    [
+        "username" => "anna",
+        "password" => "pwd789",
+        "email" => "anna@example.com"
+    ]
+];
 
+foreach ($users as $user) {
+    echo "Felhasználónév: " . $user["username"] . ", Jelszó: " . $user["password"] . ", Email: " . $user["email"] . "<br>";
+}
 ?>
