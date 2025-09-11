@@ -20,10 +20,8 @@
     echo "Kiír", $message, "értéket.", "<br>\n";
     echo "Kiír $message értéket.", "<br>\n";
     echo "Kiír {$message}darab értéket.", "<br>\n";
-    echo 'Kiír {$message}darab értéket.', "<br>\n";
 
-    print "Kiír". $message. "értéket.", "<br>\n";
-
+    //print "Kiír". $message. "értéket.", "<br>\n";
     /* 
     git parancsok 
         git init:: helyi repo inicializalasa

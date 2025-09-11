@@ -1,10 +1,5 @@
-<?php 
-require 'App/helper.php';
+<?php
 
-/*use function Application\sayHello; //fgv globalis névtérbe importálása
-
-echo sayHello();*/
-
-echo \Application\sayHello();
-
+$service = new MyService();
+$service->run();
 ?>
