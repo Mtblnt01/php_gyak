@@ -1,5 +1,4 @@
 <?php
 
-$service = new MyService();
-$service->run();
+echo "szia";
 ?>
