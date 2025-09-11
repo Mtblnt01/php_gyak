@@ -2,12 +2,8 @@
 namespace App\Traits;
 
 trait LoggerTrait {
-    public function log($message) {
-        echo "[LOG]: " . $message . "\n";
+    public function log($message="Siker"){
+        echo "[LOG]: $message\n";
     }
 }
-
-
-
-
 ?>
