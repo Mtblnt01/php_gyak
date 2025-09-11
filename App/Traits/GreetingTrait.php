@@ -2,8 +2,8 @@
 namespace App\Traits;
 
 trait GreetingTrait {
-    public function greet($name = "Guest") {
-        return "Hello, $name!";
+    public function greet($name = "Guest"){
+        return "Hello $name!";
     }
 }
 
