@@ -1,0 +1,2 @@
+Hozd létre az Application namespace-t, amibe az App/Helper.php-ben, amiben legyen egy sayHello() fgv, (-> Hello világ!) 
+Hívd meg a függvényt az index.php fajlbol
