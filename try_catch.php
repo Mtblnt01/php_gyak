@@ -20,6 +20,16 @@
 
         if (file_put_contents($dataFile, $new_content) != false) {
             $message = "Sikeresen módosult a $dataFile fájl!";
+            $currentContent = $new_content;
+            //Naplózás
+            $currentTime = date('Y-m-d H:i:s');
+            $logEntry = "{[$currentTime]} Módosítás: A(z) '{$dataFile}' fájl tartalma módosítva lett. \n";
+            if (file_put_contents($logFile, $logEntry, FILE_APPEND | LOCK_EX) == false){
+                throw new Exception("Nem sikerül a naplózás a $logFile-ban");
+            }
+
+        } else {
+            throw new Exception("A $dataFile írása sikerü!");
         }
     }
 ?>
@@ -41,9 +51,7 @@
 
 
     <h2>A data.txt tartalma:</h2>
-    <pre>
-        <?= htmlspecialchars($currentContent)?>
-    </pre>
+    <pre><?= htmlspecialchars($currentContent)?></pre>
 
     <h2>Módosítás</h2>
     <form action="" method="post">
