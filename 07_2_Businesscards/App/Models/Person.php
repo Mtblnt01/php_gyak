@@ -7,7 +7,7 @@ class Person{
     protected string $email;
     private string $phone;
 
-    public function __construct(?int $id, string $name, string $name, string $phone){
+    public function __construct(?int $id, string $name, string $email, string $phone){
         $this->id = $id;
         $this->name = $name;
         $this->email = $email;
